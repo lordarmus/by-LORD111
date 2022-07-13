@@ -1,14 +1,17 @@
-let fs = require('fs') 
+let fs = require('fs')                    //CREATOR = YahyaGanzz , DEVBOT
 let chalk = require('chalk')
-
 global.owner = [
-  ['6287898307350'],
-  ['6287898307350'],
-  ['6287898307350', 'Owner', true]
-  // [number, dia creator/owner?, dia developer?]
-] // Put your number here
-global.mods = [] // Want some help?
-global.prems = [] // Premium user has unlimited limit
+  ['6281938681806'],
+  ['66281511480762'],
+  ['6282124379785', 'Owner IkhsanBot', true]  
+  
+] 
+global.ownername = [['Ikhsan']]
+global.namabot = [['Ikhsan-Bot']]
+global.ownerinsta = [['@Ikhsan_888816']]
+global.mods = [] 
+global.prems = [] 
+
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -16,23 +19,23 @@ global.APIs = { // API Prefix
   zahir: 'https://zahirr-web.herokuapp.com',
   bcil: 'https://75.119.137.248:21587',
   neoxr: 'https://api.neoxr.eu.org/',
-  zeks: 'https://api.zeks.me',
   gimez: 'https://masgimenz.my.id/',
   melcanz: 'https://melcanz.com',
   pencarikode: 'https://pencarikode.xyz',
   LeysCoder: 'https://leyscoders-api.herokuapp.com',
-  restapi: 'https://x-restapi.herokuapp.com'
+  restapi: 'https://x-restapi.herokuapp.com',
+  alphabot: 'https://api-alphabot.herokuapp.com'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'apikeyaine',
+  'https://api.xteam.xyz': '524e9d1f64f72f79',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.neoxr.eu.org/': 'jVEMyB2ITJ',
-  'https://api.zeks.me': 'apikeyaine',
+  'https://api.neoxr.eu.org/': '0fWgL9ID',
   'https://pencarikode.xyz': 'pais',
   'https://melcanz.com': 'ZZBk7EBb',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll',
-  'https://x-restapi.herokuapp.com': 'BETA'
+  'https://x-restapi.herokuapp.com': 'BETA',
+  'https://api-alphabot.herokuapp.com': 'N7axnIq3'
 }
 
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
@@ -40,8 +43,8 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '@penta_bot'
-  var sticker_author = 'penta'
+  var sticker_name = 'AzzBot-MD'
+  var sticker_author = 'By YahyaGanzz'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -58,7 +61,7 @@ fs.watchFile(file_exif, () => {
 // Sticker WM
 global.packname = sticker_name
 global.author = sticker_author
-global.wm = '© Gempy'
+global.wm = 'Created by YahyaGanzz'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
