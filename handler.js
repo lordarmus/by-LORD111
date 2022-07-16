@@ -275,12 +275,12 @@ module.exports = {
                     if (!isNumber(user.lastadventure)) user.lastadventure = 0
                 } else global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 1000,
+                    limit: 25,
                     joinlimit: 1,
                     spammer: 0,
-                    money: 10000,
-                    bank: 10000,
-                    health: 100,
+                    money: 50000,
+                    bank: 50000,
+                    health: 200,
                     tiketcoin: 0,
                     healtmonster: 100,
                     armormonster: 0,
@@ -309,8 +309,8 @@ module.exports = {
                     string: 0,
 
                     emerald: 0,
-                    diamond: 1000,
-                    berlian: 1000,
+                    diamond: 100000000,
+                    berlian: 100000000,
                     emas: 0,
                     gold: 0,
                     iron: 0,
@@ -340,7 +340,7 @@ module.exports = {
                     common: 0,
                     uncommon: 0,
                     mythic: 0,
-                    legendary: 0,
+                    legendary: 100000,
                     pet: 0,
                     ramuan: 0,
                     
