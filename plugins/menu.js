@@ -45,7 +45,7 @@ Hai, %ucapan %name! 👋
 *Tanggal:* %date
 *Uptime:* %uptime (%muptime)
 
-*JOIN BRO*=*https://chat.whatsapp.com/GpwaG5nvU2yCitgJ7c8o8f*
+*JOIN BRO*= *https://chat.whatsapp.com/GpwaG5nvU2yCitgJ7c8o8f*
 
 *Limit:* %limit
 *Level:* %level
@@ -159,7 +159,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://aiinne.github.io/', 'Website', '', '', [
+    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://chat.whatsapp.com/GpwaG5nvU2yCitgJ7c8o8f', 'Grup-Bot-Ikhsan', '', '', [
       ['Donate', '/donasi'],
       ['Sewa Bot', '/sewa'],
       ['Owner', '/owner']
