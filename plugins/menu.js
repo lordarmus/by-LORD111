@@ -45,6 +45,8 @@ Hai, %ucapan %name! 👋
 *Tanggal:* %date
 *Uptime:* %uptime (%muptime)
 
+*join Bro*=https://chat.whatsapp.com/GpwaG5nvU2yCitgJ7c8o8f*
+
 *Limit:* %limit
 *Level:* %level
 *XP:* %exp
