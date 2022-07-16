@@ -68,8 +68,8 @@ module.exports = {
                     if (!isNumber(user.petFood)) user.petFood = 0
 
                     if (!isNumber(user.emerald)) user.emerald = 0
-                    if (!isNumber(user.diamond)) user.diamond = 0
-                    if (!isNumber(user.berlian)) user.berlian = 0
+                    if (!isNumber(user.diamond)) user.diamond = 1000
+                    if (!isNumber(user.berlian)) user.berlian = 10000
                     if (!isNumber(user.emas)) user.emas = 0
                     if (!isNumber(user.gold)) user.gold = 0
                     if (!isNumber(user.iron)) user.iron = 0
@@ -100,7 +100,7 @@ module.exports = {
                     if (!isNumber(user.boxs)) user.boxs = 0
                     if (!isNumber(user.uncommon)) user.uncommon = 0
                     if (!isNumber(user.mythic)) user.mythic = 0
-                    if (!isNumber(user.legendary)) user.legendary = 0
+                    if (!isNumber(user.legendary)) user.legendary = 10000
                     if (!isNumber(user.pet)) user.pet = 0
                     if (!isNumber(user.ramuan)) user.ramuan = 0
                     
@@ -309,8 +309,8 @@ module.exports = {
                     string: 0,
 
                     emerald: 0,
-                    diamond: 0,
-                    berlian: 0,
+                    diamond: 1000,
+                    berlian: 1000,
                     emas: 0,
                     gold: 0,
                     iron: 0,
