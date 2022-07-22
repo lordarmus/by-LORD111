@@ -20,7 +20,7 @@ if (nenen) m.reply(`sukses demote @${user.split('@')[0]}!`)
 };
 
 handler.help = ['demote @user']
-handler.tags = ['group', 'owner']
+handler.tags = ['admin', 'owner']
 handler.command = /^(demo?te|member|\↓)$/i
 
 handler.group = true
