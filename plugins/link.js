@@ -1,14 +1,13 @@
-
 let handler = async (m, { conn, args }) => {
 	let id = m.chat
 	    if (/^[0-9]{5,16}-[0-9]+@g\.us$/.test(args[0])) id = args[0]
-      //  if (!/^[0-9]{5,16}-[0-9]+@g\.us$/.test(id)) throw 'Hanya bisa dibuka di grup'
+      //  if (!/^[0-9]{5,16}-[0-9]+@g\.us$/.test(id)) throw 'Fitur ini hanya bisa dibuka di dalam grup saja'
         let groupMetadata = await conn.groupMetadata(id)
         if (!groupMetadata) throw 'groupMetadata is undefined'
         if (!'participants' in groupMetadata) throw 'participants is not defined'
         let me = groupMetadata.participants.find(user => user.id === conn.user.jid)
-        if (!me) throw 'Bot tidak ada di grup itu'
-        if (me.admin !== 'admin') throw 'Aku bukan admin T_T'
+        if (!me) throw 'Bot ini tidak ada di dalam grup itu'
+        if (me.admin !== 'admin') throw 'Aku harus menjadi admin dahulu untuk menggunakan fitur tersebut!!!'
         m.reply('https://chat.whatsapp.com/' + await conn.groupInviteCode(id))
 /*
     if (!m.isGroup) {
@@ -17,7 +16,7 @@ let handler = async (m, { conn, args }) => {
         m.reply(`*Grup Utama*
 https://chat.whatsapp.com/${await conn.groupInviteCode(gc)}
   
-*Grup Informasi*
+*Informasi Group Ini*
 https://chat.whatsapp.com/${await conn.groupInviteCode(gc2)}`.trim())
     } else {
         let id = m.chat
@@ -25,8 +24,8 @@ https://chat.whatsapp.com/${await conn.groupInviteCode(gc2)}`.trim())
         if (!groupMetadata) throw 'groupMetadata is undefined'
         if (!'participants' in groupMetadata) throw 'participants is not defined'
         let me = groupMetadata.participants.find(user => user.id === conn.user.jid)
-        if (!me) throw 'Bot tidak ada di grup itu'
-        if (me.admin !== 'admin') throw 'Bot bukan admin'
+        if (!me) throw 'Bot sedang tidak ada di dalam grup itu'
+        if (me.admin !== 'admin') throw 'Maaf, Bot belum menjadi admin'
         m.reply('https://chat.whatsapp.com/' + await conn.groupInviteCode(id))
     }*/
 }
@@ -34,7 +33,6 @@ handler.help = ['link']
 handler.tags = ['group']
 handler.command = /^link(g(c|ro?up))?$/i
 handler.group = true
-handler.admin = true
+handler.admin = false
 
 module.exports = handler
-
