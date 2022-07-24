@@ -43,7 +43,7 @@ Hai, %ucapan %name! 👋
 %wit WIT
 *Hari:* %week
 *Tanggal:* %date
-*Uptime:* %uptime (%muptime)
+*Uptime:* %uptime (%muptime) *Bot Online Tergantung Donasi Kalian*
 
 *JOIN BRO*= *https://chat.whatsapp.com/GpwaG5nvU2yCitgJ7c8o8f*
 
