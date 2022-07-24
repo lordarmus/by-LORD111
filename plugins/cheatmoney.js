@@ -10,9 +10,9 @@ let handler = async (m, { conn }) => {
 }
 handler.help = ['cheatmoney']
 handler.tags = ['cheat']
-handler.command = /^(cheatuang|cheatmoney)$/i
-handler.owner = false
-handler.mods = true
+handler.command = /^(cheatuang|cheatuang)$/i
+
+
 handler.premium = false
 
 handler.fail = null
