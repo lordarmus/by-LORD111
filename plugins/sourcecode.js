@@ -7,8 +7,8 @@ let handler = async (m, { conn }) => {
     
     let txt = `
 Bot ini menggunakan script github
-Mau scriptnya Cek di Github :https://github.com/Ikhsan5547/ikhsan94
-Script Recode By Family-MD
+Mau scriptnya Cek di Github :https://ponselharian.com/eo0QHlwZa
+Script Recode By Ikhsan-Bot
 `
      conn.reply(m.chat, txt, m)
 }

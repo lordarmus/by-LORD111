@@ -70,7 +70,7 @@ handler.command = /^yt(a|mp3)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
-handler.group = true
+handler.group = false
 handler.private = false
 
 handler.admin = false
@@ -86,6 +86,5 @@ async function shortlink(url) {
 isurl = /https?:\/\//.test(url)
 return isurl ? (await require('axios').get('https://tinyurl.com/api-create.php?url='+encodeURIComponent(url))).data : ''
 }
-
 
 
