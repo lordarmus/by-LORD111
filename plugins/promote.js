@@ -20,7 +20,7 @@ if (nenen) m.reply(`sukses promote @${user.split('@')[0]}!`);
 };
 
 handler.help = ['promote @user']
-handler.tags = ['group', 'owner']
+handler.tags = ['admin]
 handler.command = /^(promo?te|admin|\^)$/i
 
 handler.group = true
